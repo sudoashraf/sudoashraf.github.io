@@ -1,11 +1,11 @@
 /*!
-    * Start Bootstrap - Freelancer v6.0.4 (https://startbootstrap.com/themes/freelancer)
+    * Start Bootstrap - Freelancer v6.0.0 (https://startbootstrap.com/themes/freelancer)
     * Copyright 2013-2020 Start Bootstrap
-    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
+    * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
     */
     (function($) {
     "use strict"; // Start of use strict
-
+  
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -19,7 +19,7 @@
         }
       }
     });
-
+  
     // Scroll to top button appear
     $(document).scroll(function() {
       var scrollDistance = $(this).scrollTop();
@@ -29,30 +29,18 @@
         $('.scroll-to-top').fadeOut();
       }
     });
-
-    // Toggle navigation icon
-    $('.js--nav-icon').click(function() {
-      var icon = $('.js--nav-icon i');
-      if (icon.hasClass('fa fa-bars')) {
-        icon.addClass('fa fa-times');
-        icon.removeClass('fa fa-bars');
-      } else {
-        icon.addClass('fa fa-bars');
-        icon.removeClass('fa fa-times');
-      }
-    });
-
+  
     // Closes responsive menu when a scroll trigger link is clicked
     $('.js-scroll-trigger').click(function() {
       $('.navbar-collapse').collapse('hide');
     });
-
+  
     // Activate scrollspy to add active class to navbar items on scroll
     $('body').scrollspy({
       target: '#mainNav',
       offset: 80
     });
-
+  
     // Collapse Navbar
     var navbarCollapse = function() {
       if ($("#mainNav").offset().top > 100) {
@@ -65,7 +53,7 @@
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
-
+  
     // Floating label headings for the contact form
     $(function() {
       $("body").on("input propertychange", ".floating-label-form-group", function(e) {
@@ -76,5 +64,6 @@
         $(this).removeClass("floating-label-form-group-with-focus");
       });
     });
-
+  
   })(jQuery); // End of use strict
+  
