@@ -3041,6 +3041,11 @@ input[type="button"].btn-block {
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
 
+.navbar-brand img {
+  width: 40px;
+  height: auto;
+}
+
 .navbar-nav {
   display: flex;
   flex-direction: column;
